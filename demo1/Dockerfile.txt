@@ -1,0 +1,4 @@
+FROM amazoncorretto:17-alpine-jdk
+MAINTAINER andresur
+COPY target/cvweb.jar cvweb.jar
+ENTRYPOINT ["java","-jar","/cvweb.jar"]
